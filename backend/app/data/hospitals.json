@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "Apollo Hospital Bannerghatta",
+        "latitude": 12.8958,
+        "longitude": 77.5986,
+        "tier_level": "Tier 1",
+        "icu_available": 12,
+        "emergency_beds": 25,
+        "specialization": "Cardiology, Neurology, Oncology, Trauma"
+    },
+    {
+        "id": 2,
+        "name": "Fortis Hospital Cunningham Road",
+        "latitude": 12.9915,
+        "longitude": 77.5968,
+        "tier_level": "Tier 1",
+        "icu_available": 8,
+        "emergency_beds": 15,
+        "specialization": "Cardiology, Orthopedics, General Surgery"
+    },
+    {
+        "id": 3,
+        "name": "Manipal Hospital Old Airport Road",
+        "latitude": 12.9592,
+        "longitude": 77.6479,
+        "tier_level": "Tier 1",
+        "icu_available": 20,
+        "emergency_beds": 40,
+        "specialization": "Multi-specialty, Trauma, Pediatrics, Cardiology"
+    },
+    {
+        "id": 4,
+        "name": "St. John's Medical College Hospital",
+        "latitude": 12.9304,
+        "longitude": 77.6202,
+        "tier_level": "Tier 1",
+        "icu_available": 15,
+        "emergency_beds": 30,
+        "specialization": "General Medicine, Trauma, Pediatrics, Nephrology"
+    },
+    {
+        "id": 5,
+        "name": "Narayana Health City",
+        "latitude": 12.8078,
+        "longitude": 77.7022,
+        "tier_level": "Tier 1",
+        "icu_available": 25,
+        "emergency_beds": 50,
+        "specialization": "Cardiology, Cardiac Surgery, Organ Transplant"
+    },
+    {
+        "id": 6,
+        "name": "Aster CMI Hospital",
+        "latitude": 13.0533,
+        "longitude": 77.5916,
+        "tier_level": "Tier 1",
+        "icu_available": 10,
+        "emergency_beds": 20,
+        "specialization": "Neurology, Gastroenterology, Urology"
+    },
+    {
+        "id": 7,
+        "name": "Sakra World Hospital",
+        "latitude": 12.9268,
+        "longitude": 77.6749,
+        "tier_level": "Tier 1",
+        "icu_available": 8,
+        "emergency_beds": 18,
+        "specialization": "Orthopedics, Neurology, Cardiac Sciences"
+    },
+    {
+        "id": 8,
+        "name": "Columbia Asia Referral Hospital (Manipal) Yeshwanthpur",
+        "latitude": 13.0232,
+        "longitude": 77.5504,
+        "tier_level": "Tier 1",
+        "icu_available": 6,
+        "emergency_beds": 15,
+        "specialization": "Liver, Transplant, Cardiology"
+    },
+    {
+        "id": 9,
+        "name": "Victoria Hospital",
+        "latitude": 12.9620,
+        "longitude": 77.5750,
+        "tier_level": "Tier 2",
+        "icu_available": 4,
+        "emergency_beds": 20,
+        "specialization": "General Medicine, Government, Trauma"
+    },
+    {
+        "id": 10,
+        "name": "Bowring and Lady Curzon Hospital",
+        "latitude": 12.9818,
+        "longitude": 77.6063,
+        "tier_level": "Tier 2",
+        "icu_available": 5,
+        "emergency_beds": 15,
+        "specialization": "General Surgery, ENT, Ophthalmology"
+    },
+    {
+        "id": 11,
+        "name": "Mallya Hospital",
+        "latitude": 12.9696,
+        "longitude": 77.5932,
+        "tier_level": "Tier 2",
+        "icu_available": 5,
+        "emergency_beds": 12,
+        "specialization": "General Medicine, Urology"
+    },
+    {
+        "id": 12,
+        "name": "Jayadeva Institute of Cardiovascular Sciences",
+        "latitude": 12.9238,
+        "longitude": 77.5947,
+        "tier_level": "Tier 1",
+        "icu_available": 30,
+        "emergency_beds": 20,
+        "specialization": "Cardiology, Cardiac Surgery"
+    },
+    {
+        "id": 13,
+        "name": "NIMHANS",
+        "latitude": 12.9427,
+        "longitude": 77.5946,
+        "tier_level": "Tier 1",
+        "icu_available": 15,
+        "emergency_beds": 20,
+        "specialization": "Neurology, Psychiatry, Neurosurgery"
+    },
+    {
+        "id": 14,
+        "name": "Cloudnine Hospital Jayanagar",
+        "latitude": 12.9345,
+        "longitude": 77.5815,
+        "tier_level": "Tier 2",
+        "icu_available": 2,
+        "emergency_beds": 5,
+        "specialization": "Maternity, Pediatrics"
+    },
+    {
+        "id": 15,
+        "name": "Hosmat Hospital",
+        "latitude": 12.9695,
+        "longitude": 77.6143,
+        "tier_level": "Tier 2",
+        "icu_available": 4,
+        "emergency_beds": 10,
+        "specialization": "Orthopedics, Trauma, Sports Medicine"
+    },
+    {
+        "id": 16,
+        "name": "Sagar Hospitals Jayanagar",
+        "latitude": 12.9288,
+        "longitude": 77.5912,
+        "tier_level": "Tier 2",
+        "icu_available": 6,
+        "emergency_beds": 12,
+        "specialization": "General Medicine, Cardiology"
+    },
+    {
+        "id": 17,
+        "name": "BGS Gleneagles Global Hospitals",
+        "latitude": 12.9001,
+        "longitude": 77.5140,
+        "tier_level": "Tier 1",
+        "icu_available": 10,
+        "emergency_beds": 20,
+        "specialization": "Oncology, Liver Transplant, Multi-specialty"
+    },
+    {
+        "id": 18,
+        "name": "KC General Hospital",
+        "latitude": 12.9967,
+        "longitude": 77.5707,
+        "tier_level": "Tier 3",
+        "icu_available": 2,
+        "emergency_beds": 15,
+        "specialization": "General Medicine, Government"
+    },
+    {
+        "id": 19,
+        "name": "Indira Gandhi Institute of Child Health",
+        "latitude": 12.9360,
+        "longitude": 77.5920,
+        "tier_level": "Tier 2",
+        "icu_available": 5,
+        "emergency_beds": 15,
+        "specialization": "Pediatrics"
+    },
+    {
+        "id": 20,
+        "name": "Vydehi Institute of Medical Sciences",
+        "latitude": 12.9772,
+        "longitude": 77.7285,
+        "tier_level": "Tier 2",
+        "icu_available": 10,
+        "emergency_beds": 30,
+        "specialization": "Multi-specialty"
+    }
+]
