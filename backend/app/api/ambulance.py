@@ -21,7 +21,7 @@ from pydantic import BaseModel
 
 from app.core.database import get_db
 from app.core.ranking import find_best_hospitals
-from app.core.mock_data import MOCK_HOSPITALS
+from app.models.hospital import Hospital
 from app.schemas.hospital import HospitalResponse, OfflineRegionResponse
 from app.schemas.alert import AlertRequest, AlertResponse
 from app.api.dependencies import require_ambulance_role
@@ -129,12 +129,13 @@ def get_offline_region(
 @router.post("/send-alert", response_model=AlertResponse, status_code=status.HTTP_200_OK)
 def send_alert(
     alert: AlertRequest,
+    db: Session = Depends(get_db),
     role: str = Depends(require_ambulance_role),
 ):
     """
-    Simulate sending alerts to multiple hospitals.
+    Send alerts to multiple hospitals.
     Logic:
-    - Iterate hospital_ids.
+    - Iterate hospital_ids, querying each from the database.
     - Log "Alert sent to Hospital X".
     - Pick first one as "Confirmed".
     - Log "Hospital X confirmed".
@@ -145,9 +146,9 @@ def send_alert(
     confirmed_hospital = None
 
     for i, h_id in enumerate(alert.hospital_ids):
-        # Validate hospital exists (Mock)
-        hospital = next((h for h in MOCK_HOSPITALS if h["id"] == h_id), None)
-        hospital_name = hospital["name"] if hospital else f"ID {h_id}"
+        # Query hospital from the database
+        hospital = db.query(Hospital).filter(Hospital.id == h_id).first()
+        hospital_name = hospital.name if hospital else f"ID {h_id}"
 
         print(f"Alert sent to {hospital_name}")
         logger.info(f"Alert sent to {hospital_name}")
@@ -166,9 +167,9 @@ def send_alert(
         raise HTTPException(status_code=404, detail="No valid hospitals found to assign")
 
     return AlertResponse(
-        message=f"Alert confirmed by {confirmed_hospital['name']}",
+        message=f"Alert confirmed by {confirmed_hospital.name}",
         status="confirmed",
-        confirmed_hospital_id=confirmed_hospital["id"],
+        confirmed_hospital_id=confirmed_hospital.id,
         case_id=alert.case_id,
     )
 
