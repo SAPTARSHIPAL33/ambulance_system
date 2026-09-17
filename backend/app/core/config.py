@@ -8,15 +8,15 @@ class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_SERVER: str
-    POSTGRES_PORT: str = "5432"
+    POSTGRES_PORT: str 
     POSTGRES_DB: str
 
     @property
     def SQLALCHEMY_DATABASE_URI(self) -> str:
         return f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}@{self.POSTGRES_SERVER}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
-
     class Config:
         case_sensitive = True
         env_file = ".env"
 
 settings = Settings()
+
